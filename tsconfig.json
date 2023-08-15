@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "types": ["node", "@wdio/globals/types", "expect-webdriverio", "@wdio/mocha-framework", "wdio-intercept-service", "@wdio/sauce-service"],
+        "target": "es2021",
+        "noEmit": true,
+        "skipLibCheck": true
+    },
+    "exclude": ["node_modules"]
+}
