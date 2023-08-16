@@ -1,4 +1,4 @@
-import { waitForPageToBeReady } from '../utility/useful-functions';
+import { waitForPageToBeReady } from '../../utility/useful-functions';
 
 describe('Attribute Selector Strategies', async () => {
   it('Should show how to search by className', async () => {
