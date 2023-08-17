@@ -15,6 +15,11 @@ Currently, as of 08/17/2023, the provided sections are:
 - click
 - waitFor
 
+### POM - Page Object Model
+The purpose of this part is to provide an example of what POM looks like with WebDriverIO.
+
+Page Object Model is a method of organizing your code into "pages". This is mainly used for readability purposes. More info can be found here: https://www.browserstack.com/guide/page-object-model-in-selenium
+
 ### Selector Strategies
 The purpose of this part is to show off various selector strategies that are used at Great Minds. This is more-so a collaborative section that should be built out over time when new strategies are figured out
 
@@ -57,3 +62,12 @@ The following should be installed on your machine
 - Run npm install from a command line to install all dependencies
 
 ### Executing your tests
+
+
+## Resources
+- https://webdriver.io/
+- https://webdriver.io/docs/gettingstarted
+- https://webdriver.io/docs/api/browser/$ -- Creating selectors
+- https://webdriver.io/docs/api/browser/$$ -- Working with a list of similar elements
+- https://webdriver.io/docs/api/element/setValue -- Typing
+- https://webdriver.io/docs/api/element/waitForClickable -- WaitFor's
