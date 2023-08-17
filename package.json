@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "all:tests": "wdio run configs/wdio.conf.ts",
+    "specific:test": "npx tsc && SPECIFIC=multiple node_modules/.bin/wdio configs/specific.conf.ts"
   },
-  "author": "",
+  "author": "Joshua Johnson",
   "license": "ISC",
   "devDependencies": {
     "@wdio/cli": "^8.15.0",
@@ -16,6 +16,10 @@
     "@wdio/spec-reporter": "^8.15.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
+    "wdio-chromedriver-service": "^8.1.1",
     "wdio-wait-for": "^3.0.6"
+  },
+  "dependencies": {
+    "chromedriver": "^116.0.0"
   }
 }

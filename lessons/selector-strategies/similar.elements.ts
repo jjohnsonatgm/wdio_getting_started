@@ -10,7 +10,7 @@ describe('Show off how to work with multiple elements that have the same DOM ele
     await $('#password').setValue('Test@123');
     await $('[aria-label="Log in"]').waitForEnabled();
     await $('[aria-label="Log in"]').click();
-    await waitForPageToBeReady('/explore/curricula/grade?', '.curricula-navmenu-button');
+    await waitForPageToBeReady('/explore/curricula/grade?', '.curricula-navmenu-button', 2000);
 
     // Notice the double $$ notation here, that signifies an array list of elements
     const modules = await $$('ul[class*="Modules"] li');

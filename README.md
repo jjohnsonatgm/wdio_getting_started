@@ -18,7 +18,9 @@ Currently, as of 08/17/2023, the provided sections are:
 ### POM - Page Object Model
 The purpose of this part is to provide an example of what POM looks like with WebDriverIO.
 
-Page Object Model is a method of organizing your code into "pages". This is mainly used for readability purposes. More info can be found here: https://www.browserstack.com/guide/page-object-model-in-selenium
+Page Object Model is a method of organizing your code into "pages". This is mainly used for readability purposes. More info can be found here: 
+- https://www.browserstack.com/guide/page-object-model-in-selenium
+- https://webdriver.io/docs/pageobjects/
 
 ### Selector Strategies
 The purpose of this part is to show off various selector strategies that are used at Great Minds. This is more-so a collaborative section that should be built out over time when new strategies are figured out
@@ -62,7 +64,20 @@ The following should be installed on your machine
 - Run npm install from a command line to install all dependencies
 
 ### Executing your tests
+To execute these tests two configuration files have been provided, located in the /configs directory
 
+- specific.conf.ts -- This configuration file is used to run specific Test Cases, rather than an entire suite
+  - The primary difference between this and the wdio.conf is in the mochaOpts object where we're looking for an environment variable on what test you want to run
+  - Let's say you want to run the Attribute Selector Strategies test, then the command in your package.json would look like: 
+    - npx tsc && SPECIFIC=Attribute node_modules/.bin/wdio configs/specific.conf.ts'
+  - If you want to get even more specific and run just the className test case:
+    - npx tsc && SPECIFIC=className node_modules/.bin/wdio configs/specific.conf.ts
+- wdio.conf.ts -- This configuration file is used to run all of your tests rather than a specific test case
+  - You will probably use the specific configuration file more than this one.
+
+From your command line you can execute the scripts provided in the package.json
+- npm run all:tests
+- npm run specific:test
 
 ## Resources
 - https://webdriver.io/
