@@ -2,18 +2,35 @@
 
 ## Background
 The purpose of this minimal repo is to help teach Junior TAE's, GM new hires, or Globant TAE's how to use WebDriverIO. To do this effectively, this repo has been broken into multiple parts:
-- interactions
-- selector-strategies
-- pom
+- configs
+- lessons
+  - assertions
+  - interactions
+  - selector-strategies
+  - pom
 - playground
 - utility
+
+### Configs
+The purpose of this directory is to hold all the project's configuration files. In this case we have a config to run specific tests and one to run an entire suite of tests. More info can be found on this below in the "How to run" section
+
+More examples of what you could do is create "base" configuration files which can be inherited by other "child" configuration files. This is particularly useful when you have a config for BrowserStack / LambdaTest / Sauce Labs and beyond. It helps cut down on config file complexity and increase code re-usability.
+
+### Assertions
+The purpose of this directory is to show off assertions, or expectations that should be ran during your test. The primary use of assertions is to add mini "tests" to your test cases. 
+
+Currently, as of 08/18/2023, the provided sections are:
+- toBeTruthy
 
 ### Interactions
 The purpose of this part is to show off basic page interactions
 
 Currently, as of 08/17/2023, the provided sections are:
+- async
 - click
-- waitFor
+- getText
+- hoverElement
+- waitFors
 
 ### POM - Page Object Model
 The purpose of this part is to provide an example of what POM looks like with WebDriverIO.

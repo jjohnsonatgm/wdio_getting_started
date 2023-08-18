@@ -27,5 +27,8 @@ describe('Attribute Selector Strategies', async () => {
   it('Should show how to search by the $ selector strategy, or starting from the end of a class or attribute', async () => {
     const fullSelector = $('button[aria-label="Log in"]');
     const endOfAttributeSelector = $('[aria-label$="in"]');
+
+    await fullSelector.waitForClickable();
+    await endOfAttributeSelector.waitForClickable();
   });
 });

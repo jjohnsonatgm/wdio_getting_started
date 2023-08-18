@@ -20,6 +20,7 @@
     "wdio-wait-for": "^3.0.6"
   },
   "dependencies": {
-    "chromedriver": "^116.0.0"
+    "chromedriver": "^116.0.0",
+    "expect-webdriverio": "^4.2.7"
   }
 }
