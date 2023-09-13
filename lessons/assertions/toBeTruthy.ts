@@ -7,7 +7,8 @@ describe('Validating that something should equal true', async () => {
 
     /**
      * This assertion is comparing the promise returned from isDisplayed and expecting it to be true
-     * Basically were validating that the login with email button is displayed...twice lol
+     * Basically were validating that the login with email button is displayed
+     * The test will FAIL if the login with email button is not displayed
      */
     expect(await $('button[class*="LoginWithEmail"]').isDisplayed()).toBeTruthy();
   })

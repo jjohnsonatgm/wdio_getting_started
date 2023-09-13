@@ -11,7 +11,8 @@ export const config: Options.Testrunner = {
   specs: [
     '../lessons/interactions/*.ts',
     '../lessons/selector-strategies/*.ts',
-    '../lessons/playground/*.ts'
+    '../playground/*.ts',
+    '../lessons/assertions/*.ts'
   ],
   maxInstances: 10,
   capabilities: [{

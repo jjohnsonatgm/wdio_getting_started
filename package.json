@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "all:tests": "wdio run configs/wdio.conf.ts",
-    "specific:test": "npx tsc && SPECIFIC=multiple node_modules/.bin/wdio configs/specific.conf.ts"
+    "specific:test": "npx tsc && SPECIFIC=toBeClickable node_modules/.bin/wdio configs/specific.conf.ts"
   },
   "author": "Joshua Johnson",
   "license": "ISC",
